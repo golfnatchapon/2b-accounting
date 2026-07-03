@@ -112,6 +112,36 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
   border: 2px solid var(--light-violet-200);
 }
 
+.btn-primary {
+  background: var(--hard-violet-500);
+  color: var(--white);
+  box-shadow: 0 8px 24px rgba(237, 30, 121, 0.22);
+}
+
+.btn-primary:hover {
+  background: var(--soft-violet-600);
+}
+
+.hero-cta {
+  justify-content: center;
+}
+
+.hero-cta .btn-primary {
+  padding: 1rem 2.25rem;
+  font-size: 1.0625rem;
+}
+
+.hero-phone-hint {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
+.hero-phone-hint a {
+  color: var(--hard-violet-500);
+  font-weight: 600;
+}
+
 .btn-group {
   display: flex;
   flex-wrap: wrap;
