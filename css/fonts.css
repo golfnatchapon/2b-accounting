@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Sukhumvit Set";
+  src: url("https://db.onlinewebfonts.com/t/69fc4f0f2a8869feeec71379c2cf824c.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/69fc4f0f2a8869feeec71379c2cf824c.woff") format("woff");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
