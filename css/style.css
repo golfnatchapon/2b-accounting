@@ -27,6 +27,7 @@
   --radius-lg: 1.5rem;
   --radius-xl: 2rem;
   --container: 75rem;
+  --navbar-height: 5.5rem;
   --font: "Sukhumvit Set", "Sukhumvit", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -134,7 +135,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5.5rem;
+  height: var(--navbar-height);
   gap: 1.5rem;
 }
 
@@ -193,7 +194,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 
 /* Hero */
 .hero {
-  padding-top: 8rem;
+  padding-top: calc(var(--navbar-height) + 2.5rem);
   padding-bottom: 4rem;
   background: var(--gradient-soft);
   position: relative;
@@ -708,7 +709,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
-    top: 5.5rem;
+    top: var(--navbar-height);
     left: 0;
     right: 0;
     background: var(--white);
@@ -756,4 +757,9 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
   .contact-section { padding: 2rem; }
   .footer-grid { grid-template-columns: 1fr; }
   .section-padding { padding: 3.5rem 0; }
+
+  /* Keep hero below fixed navbar — .section-padding shorthand overrides .hero padding-top */
+  .hero {
+    padding-top: calc(var(--navbar-height) + 1.5rem);
+  }
 }
