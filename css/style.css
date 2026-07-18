@@ -854,6 +854,35 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 .contact-info-item a:hover { color: var(--soft-violet-600); }
 
+.contact-info-item--address {
+  align-items: flex-start;
+}
+
+.contact-info-item--address .contact-icon {
+  margin-top: 0.125rem;
+}
+
+.contact-address-text {
+  min-width: 0;
+  max-width: 25rem;
+}
+
+.contact-address-label {
+  display: block;
+  margin-bottom: 0.125rem;
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.contact-address-text address {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  font-style: normal;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
